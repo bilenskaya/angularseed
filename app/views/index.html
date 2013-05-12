@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tiago Reis - Angular Seed</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+        <link rel="stylesheet" href="css/toastr.min.css"/>
+        <link rel="stylesheet" href="css/app.css"/>
+    </head>
+    <body>
+        <div class="page-header">
+            <h1 class="text-center">Angular - Requires an Express Passport</h1>
+        </div>
+        <div ng-controller="RootCtrl">
+            <div> Hello {{email}}! <br/><br/></div>
+            <div ng-switch on="isLoggedIn">
+                <ul class="menu" ng-switch-when="false">
+                    <li><a href="#/login">Login / Register</a></li>
+                    <li><a href="#/unsecured">Unsecured Content</a></li>
+                </ul>
+                <ul class="menu" ng-switch-when="true">                    
+                    <li><a href="#/secure">Secure Content</a></li>
+                </ul>            
+            </div>
+            <div class="container-fluid" ng-view ng-animate="{enter: 'view-enter'}"></div>
+        </div>
+        <script data-main="js/main" src="lib/require/require.js"></script>
+    </body>
+</html>
