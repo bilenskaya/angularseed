@@ -23,7 +23,7 @@ exports.partials = function (req, res) {
     res.render('partials/' + name);
 }
 
-api.user = require('../app/api/user');
+api.user = require('../server/api/user');
 
 exports.register = function (req, res) {
     api.user.create(req, res);
