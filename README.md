@@ -1,4 +1,4 @@
-# AngularJS / Express / RequireJS / Passport - Seed
+# AngularJS / Mongo / RequireJS / Passport - Seed
 
 This is my seed Project. 
 I use what I believe are good practices, and of course, with a bunch of personal preferences that may be changed. 
