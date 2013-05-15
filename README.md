@@ -9,23 +9,36 @@ No Jade here :) Me no like.
 - NodeJS
 - Express Framework
 - AngularJS
-- RequireJS
-- Passport
+- MongoDB (mongoose)
+
+(Other libraries used: RequireJS, Passport, Nodemailer and crypto)
+
+## Instructions
+
+1. Make sure you have Mongo installed and running
+2. Run npm install (with administration rights)
+3. Run node app.js
 
 ## Overview
 
 This Seed provides users with RequireJS module loading, PassportJS registration / authentication and AngularJS as the client framework.
 
-Upon registration, the application sends a confirmation e-mail. As for now, I'm not doing anything with it, but I plan to add more features sometime soon (Tests are a must).
+Upon registration, the application sends a confirmation e-mail (make sure you use a valid email address that you can check for the confirmation email). As for now, I'm not doing anything with it, but I plan to add more features sometime soon (Tests are a must).
+
+## Next steps
+
+1. Use lazy loading (I haven't yet found a good way to do this properly. I know there's a few seeds that do this... but I have to investigate how to do it in a kind of different way)
+
+2. Put an email confirmation url to confirm users / allow only confirmed users to login
+
+0. Unit tests / e2e tests
 
 ## Directory Structure
     
 	app.js              	--> web server
     package.json        	--> package dependencies
     app/             		--> main app
-  		api/				--> api for model manipulation
       	css/              	--> css files
-      	helpers/			--> generic helpers (I added an encryption helper)
       	js/               	--> javascript files
       		components/		--> logger component
         	controllers/	--> application controllers      	
@@ -33,7 +46,6 @@ Upon registration, the application sends a confirmation e-mail. As for now, I'm 
         	main.js 		--> main application bootstrap
         	routes.js 		--> client side routing definition
     	lib/            	--> angular and 3rd party JavaScript libraries
-    	models/				--> mongoose models
     	views/				--> main view and partials
 	config/					--> application config folder
 		app(.)-strings.js 	--> re-usable strings used by application
@@ -42,6 +54,10 @@ Upon registration, the application sends a confirmation e-mail. As for now, I'm 
 		mailer.js 			--> mailer module
 		passport.js 		--> passportjs configuration
 		routes.js 			--> routes's implementation
+	server/					--> server side logic
+  		api/				--> api for model manipulation	
+      	helpers/			--> generic helpers (I added an encryption helper)
+    	models/				--> mongoose models      	
 
 Hope you like it,
 Tiago
