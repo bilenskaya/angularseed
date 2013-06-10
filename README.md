@@ -37,7 +37,7 @@ Upon registration, the application sends a confirmation e-mail (make sure you us
     
 	app.js              	--> web server
     package.json        	--> package dependencies
-    app/             		--> main app
+    app/             		--> main client app
       	css/              	--> css files
       	js/               	--> javascript files
       		components/		--> logger component
