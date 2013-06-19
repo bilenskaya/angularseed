@@ -27,11 +27,9 @@ Upon registration, the application sends a confirmation e-mail (make sure you us
 
 ## Next steps
 
-1. Use lazy loading (I haven't yet found a good way to do this properly. I know there's a few seeds that do this... but I have to investigate how to do it in a kind of different way)
+1. Unit Tests with Jasmine (coming very soon) - I expect to use quite a few Jasmine features.
 
-2. Put an email confirmation url to confirm users / allow only confirmed users to login
-
-0. Unit tests / e2e tests
+2. Put an email confirmation url to confirm users / allow only confirmed users to login (this is a trivial feature / not sure how relevant)
 
 ## Directory Structure
     
