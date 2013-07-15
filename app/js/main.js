@@ -9,7 +9,8 @@ require.config({
         toastr: '../lib/toastr.min',
         logger: 'components/logger',
         loginctrl: 'controllers/login',
-        securectrl: 'controllers/secure'
+        securectrl: 'controllers/secure',
+        messagesService: 'services/messagesService'
     },
     shim:{
         'angular':{
@@ -42,7 +43,8 @@ require([
     'app',
     'toastr',
     'logger',
-    'routes'
+    'routes',
+    'messagesService'
 ], function (angular) {
     //After all dependencies are loaded, bootstrap application
     $(document).ready(function () {
